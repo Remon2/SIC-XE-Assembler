@@ -1,0 +1,144 @@
+0	     	.dadssa
+1	0000	     COPY	START	                 0	.dsasdaAS
+2	0000	         	EXTDEF	BUFFER,BUFEND,LENGTH	     
+3	     	         	EXTREF	       RDREC,WRREC	     
+4	0000	    FIRST	   STL	            RETADR	     
+5	0003	    CLOOP	+JSUB	             RDREC	     
+6	0007	         	   LDA	          LENGTH,X	     
+7	000A	         	  COMP	                #0	     
+8	000D	         	   JEQ	            ENDFIL	     
+9	0010	         	+JSUB	             WRREC	     
+10	0014	         	     J	             CLOOP	     
+11	0017	   ENDFIL	   LDA	           =C'EOF'	     
+12	001A	         	   STA	            BUFFER	     
+13	001D	         	   LDA	                #3	     
+14	0020	         	   STA	            LENGTH	     
+15	0023	         	+JSUB	             WRREC	     
+16	0027	         	     J	           @RETADR	     
+17	002A	   RETADR	  RESW	                 1	     
+18	002D	   LENGTH	  RESW	                 1	     
+19	     	         	LTORG	                  	     
+20	0030	    *		=C'EOF'
+21	0033	   BUFFER	  RESB	              4096	     
+22	1033	   BUFEND	   EQU	                 *	     
+23	1000	   MAXLEN	   EQU	     BUFEND-BUFFER	     
+24	0000	    RDREC	CSECT	                  	     
+25	     	         	EXTREF	BUFFER,LENGTH,BUFEND	     
+26	0000	         	CLEAR	                 X	     
+27	0002	         	CLEAR	                 A	     
+28	0004	         	CLEAR	                 S	     
+29	0006	         	  +LDT	          #MAXLEN2	     
+30	000A	    RLOOP	    TD	             INPUT	     
+31	000D	         	   JEQ	             RLOOP	     
+32	0010	         	    RD	             INPUT	     
+33	0013	         	COMPR	               A,S	     
+34	0015	         	   JEQ	              EXIT	     
+35	0018	         	+STCH	          BUFFER,X	     
+36	001C	         	  TIXR	                 T	     
+37	001E	         	   JLT	             RLOOP	     
+38	0021	     EXIT	  +STX	            LENGTH	     
+39	0025	         	  RSUB	                  	     
+40	0028	    INPUT	  BYTE	             X'F1'	     
+41	0029	  MAXLEN2	  WORD	     BUFEND-BUFFER	     
+42	0000	    WRREC	CSECT	                  	     
+43	     	         	EXTREF	     LENGTH,BUFFER	     
+44	0000	         	CLEAR	                 X	     
+45	0002	         	  +LDT	            LENGTH	     
+46	0006	    WLOOP	    TD	            =X'05'	     
+47	0009	         	   JEQ	             WLOOP	     
+48	000C	         	+LDCH	          BUFFER,X	     
+49	0010	         	    WD	            =X'05'	     
+50	0013	         	  TIXR	                 T	     
+51	0015	         	   JLT	             WLOOP	     
+52	0018	         	  RSUB	                  	     
+53	001B	         	   END	             FIRST	     
+54	001B	    *		=X'05'
+
+
+		Literals TABLE
+*****************************************
+*	Name	Value	Length	Address*
+	=C'EOF'	0017	3	0030
+	=X'05'	0006	2	001B
+*****************************************
+*****************************************
+
+
+	SYMBOL TABLE
+**********************************************
+*   SYMBOL      *    ADDRESS    *Section Numer
+**********************************************
+*BUFEND         |	1033 |	0             *
+*BUFFER         |	0033 |	0             *
+*CLOOP          |	0003 |	0             *
+*COPY           |	0000 |	0             *
+*ENDFIL         |	0017 |	0             *
+*EXIT           |	0021 |	1             *
+*FIRST          |	0000 |	0             *
+*INPUT          |	0028 |	1             *
+*LENGTH         |	002D |	0             *
+*MAXLEN         |	1033 |	0             *
+*MAXLEN2        |	0029 |	1             *
+*RDREC          |	1033 |	1             *
+*RETADR         |	002A |	0             *
+*RLOOP          |	000A |	1             *
+*WLOOP          |	0006 |	2             *
+*WRREC          |	002C |	2             *
+**********************************************
+#End of pass 1 for SIC/XE Assembler#
+Line	LocCtr	   Labels	OpCode	    Flags	   Operands	     Comments	   ObjectCode	ModBoolean
+0	     	.dadssa
+1	      0000	     COPY	START	          	         0	.dsasdaAS	             	           
+2	      0000	         	EXTDEF	          	BUFFER,BUFEND,LENGTH	         	        -----	           
+3	          	         	EXTREF	          	RDREC,WRREC	         	        -----	           
+4	      0000	    FIRST	   STL	    110010	    RETADR	         	       172027	           
+5	      0003	    CLOOP	+JSUB	    110001	     RDREC	         	     4B101033	           
+6	      0007	         	   LDA	    111010	  LENGTH,X	         	       03A023	           
+7	      000A	         	  COMP	    011000	        #0	         	       298000	           
+8	      000D	         	   JEQ	    110010	    ENDFIL	         	       332007	           
+9	      0010	         	+JSUB	    110001	     WRREC	         	     4B10002C	           
+10	      0014	         	     J	    110010	     CLOOP	         	       3F2FEC	           
+11	      0017	   ENDFIL	   LDA	    110010	   =C'EOF'	         	       032016	           
+12	      001A	         	   STA	    110010	    BUFFER	         	       0F2016	           
+13	      001D	         	   LDA	    010000	        #3	         	       010003	           
+14	      0020	         	   STA	    110010	    LENGTH	         	       0F200A	           
+15	      0023	         	+JSUB	    110001	     WRREC	         	     4B10002C	           
+16	      0027	         	     J	    100010	   @RETADR	         	       3E2000	           
+17	      002A	   RETADR	  RESW	          	         1	         	        -----	           
+18	      002D	   LENGTH	  RESW	          	         1	         	        -----	           
+19	          	         	LTORG	    110000	          	         	          ---	           
+20	      0030	    *		=C'EOF'		                                                     
+21	      0033	   BUFFER	  RESB	          	      4096	         	        -----	           
+22	      1033	   BUFEND	   EQU	          	         *	         	        -----	           
+23	      1000	   MAXLEN	   EQU	          	BUFEND-BUFFER	         	        -----	           
+24	      0000	    RDREC	CSECT	    110000	          	         	          ---	           
+25	          	         	EXTREF	          	BUFFER,LENGTH,BUFEND	         	        -----	           
+26	      0000	         	CLEAR	          	         X	         	         B410	           
+27	      0002	         	CLEAR	          	         A	         	         B400	           
+28	      0004	         	CLEAR	          	         S	         	         B440	           
+29	      0006	         	  +LDT	    010001	  #MAXLEN2	         	     75100029	           
+30	      000A	    RLOOP	    TD	    110010	     INPUT	         	       E3201B	           
+31	      000D	         	   JEQ	    110010	     RLOOP	         	       332FFA	           
+32	      0010	         	    RD	    110010	     INPUT	         	       DB2015	           
+33	      0013	         	COMPR	          	       A,S	         	         A004	           
+34	      0015	         	   JEQ	    110010	      EXIT	         	       332009	           
+35	      0018	         	+STCH	    111001	  BUFFER,X	         	     57900033	           
+36	      001C	         	  TIXR	          	         T	         	         B850	           
+37	      001E	         	   JLT	    110010	     RLOOP	         	       3B2FE9	           
+38	      0021	     EXIT	  +STX	    110001	    LENGTH	         	     1310002D	           
+39	      0025	         	  RSUB	    110000	          	         	       4F0000	           
+40	      0028	    INPUT	  BYTE	          	     X'F1'	         	           F1	           
+41	      0029	  MAXLEN2	  WORD	          	BUFEND-BUFFER	         	        -----	           
+42	      0000	    WRREC	CSECT	    110000	          	         	          ---	           
+43	          	         	EXTREF	          	LENGTH,BUFFER	         	        -----	           
+44	      0000	         	CLEAR	          	         X	         	         B410	           
+45	      0002	         	  +LDT	    110001	    LENGTH	         	     7710002D	           
+46	      0006	    WLOOP	    TD	    110010	    =X'05'	         	       E32012	           
+47	      0009	         	   JEQ	    110010	     WLOOP	         	       332FFA	           
+48	      000C	         	+LDCH	    111001	  BUFFER,X	         	     53900033	           
+49	      0010	         	    WD	    110010	    =X'05'	         	       DF2008	           
+50	      0013	         	  TIXR	          	         T	         	         B850	           
+51	      0015	         	   JLT	    110010	     WLOOP	         	       3B2FEE	           
+52	      0018	         	  RSUB	    110000	          	         	       4F0000	           
+53	      001B	         	   END	          	     FIRST	         	        -----	           
+54	      001B	    *		=X'05'		                                                     

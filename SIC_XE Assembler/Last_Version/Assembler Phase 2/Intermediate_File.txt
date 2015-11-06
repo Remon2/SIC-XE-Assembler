@@ -1,0 +1,128 @@
+0	     	.234567890123456789012345
+1	0000	   BUBBLE	START	                 0	     
+2	0000	         	   LDT	                #1	     
+3	0003	    LOOP1	   LDA	              IIND	     
+4	0006	         	  COMP	               LEN	     
+5	0009	         	   JEQ	              EXIT	     
+6	000C	         	   LDA	                #0	     
+7	000F	         	   STA	              JIND	     
+8	0012	    LOOP2	   LDX	              JIND	     
+9	0015	         	   LDA	               LEN	     
+10	0018	         	   SUB	                #1	     
+11	001B	         	   SUB	              IIND	     
+12	001E	         	COMPR	               X,A	     
+13	0020	         	   JLT	               CON	     
+14	0023	         	   LDA	              IIND	     
+15	0026	         	   ADD	                #1	     
+16	0029	         	   STA	              IIND	     
+17	002C	         	     J	             LOOP1	     
+18	002F	      CON	  LDCH	             STR,X	     
+19	0032	         	  STCH	               CH1	     
+20	0035	         	   LDA	              JIND	     
+21	0038	         	   ADD	                #1	     
+22	003B	         	   STA	              JIND	     
+23	003E	         	   LDX	              JIND	     
+24	0041	         	  LDCH	             STR,X	     
+25	0044	         	  STCH	               CH2	     
+26	0047	         	  LDCH	               CH1	     
+27	004A	         	   RMO	               A,S	     
+28	004C	         	  LDCH	               CH2	     
+29	004F	         	COMPR	               S,A	     
+30	0051	         	   JGT	            SWAPIT	     
+31	0054	         	     J	             LOOP2	     
+32	0057	   SWAPIT	   LDX	              JIND	     
+33	005A	         	   LDB	               STR	     
+34	005D	         	  LDCH	               CH1	     
+35	0060	         	  STCH	             STR,X	     
+36	0063	         	   LDB	               STR	     
+37	0066	         	  SUBR	               T,X	     
+38	0068	         	  LDCH	               CH2	     
+39	006B	         	  STCH	             STR,X	     
+40	006E	         	   LDB	               STR	     
+41	0071	         	     J	             LOOP2	     
+42	0074	     EXIT	     J	                 *	     
+43	0077	     IIND	  WORD	                 0	     
+44	007A	     JIND	  WORD	                 0	     
+45	007D	      STR	  BYTE	          C'54321'	     
+46	0082	      LEN	  WORD	                 5	     
+47	0085	      CH1	  BYTE	                C'	    '
+48	0084	      CH2	  BYTE	                C'	    '
+49	0083	         	   END	                  	     
+
+
+		Literals TABLE
+*****************************************
+*	Name	Value	Length	Address*
+*****************************************
+*****************************************
+
+
+	SYMBOL TABLE
+**********************************************
+*   SYMBOL      *    ADDRESS    *Section Numer
+**********************************************
+*BUBBLE         |	0000 |	0             *
+*CH1            |	0085 |	0             *
+*CH2            |	0084 |	0             *
+*CON            |	002F |	0             *
+*EXIT           |	0074 |	0             *
+*IIND           |	0077 |	0             *
+*JIND           |	007A |	0             *
+*LEN            |	0082 |	0             *
+*LOOP1          |	0003 |	0             *
+*LOOP2          |	0012 |	0             *
+*STR            |	007D |	0             *
+*SWAPIT         |	0057 |	0             *
+**********************************************
+#End of pass 1 for SIC/XE Assembler#
+Line	LocCtr	   Labels	OpCode	    Flags	   Operands	     Comments	   ObjectCode	ModBoolean
+0	     	.234567890123456789012345
+1	      0000	   BUBBLE	START	          	         0	         	             	           
+2	      0000	         	   LDT	    010000	        #1	         	       750001	           
+3	      0003	    LOOP1	   LDA	    110010	      IIND	         	       032071	           
+4	      0006	         	  COMP	    110010	       LEN	         	       2B2079	           
+5	      0009	         	   JEQ	    110010	      EXIT	         	       332068	           
+6	      000C	         	   LDA	    010000	        #0	         	       010000	           
+7	      000F	         	   STA	    110010	      JIND	         	       0F2068	           
+8	      0012	    LOOP2	   LDX	    110010	      JIND	         	       072065	           
+9	      0015	         	   LDA	    110010	       LEN	         	       03206A	           
+10	      0018	         	   SUB	    010000	        #1	         	       1D0001	           
+11	      001B	         	   SUB	    110010	      IIND	         	       1F2059	           
+12	      001E	         	COMPR	          	       X,A	         	         A010	           
+13	      0020	         	   JLT	    110010	       CON	         	       3B200C	           
+14	      0023	         	   LDA	    110010	      IIND	         	       032051	           
+15	      0026	         	   ADD	    010000	        #1	         	       190001	           
+16	      0029	         	   STA	    110010	      IIND	         	       0F204B	           
+17	      002C	         	     J	    110010	     LOOP1	         	       3F2FD4	           
+18	      002F	      CON	  LDCH	    111010	     STR,X	         	       53A04B	           
+19	      0032	         	  STCH	    110010	       CH1	         	       572050	           
+20	      0035	         	   LDA	    110010	      JIND	         	       032042	           
+21	      0038	         	   ADD	    010000	        #1	         	       190001	           
+22	      003B	         	   STA	    110010	      JIND	         	       0F203C	           
+23	      003E	         	   LDX	    110010	      JIND	         	       072039	           
+24	      0041	         	  LDCH	    111010	     STR,X	         	       53A039	           
+25	      0044	         	  STCH	    110010	       CH2	         	       57203D	           
+26	      0047	         	  LDCH	    110010	       CH1	         	       53203B	           
+27	      004A	         	   RMO	          	       A,S	         	         AC04	           
+28	      004C	         	  LDCH	    110010	       CH2	         	       532035	           
+29	      004F	         	COMPR	          	       S,A	         	         A040	           
+30	      0051	         	   JGT	    110010	    SWAPIT	         	       372003	           
+31	      0054	         	     J	    110010	     LOOP2	         	       3F2FBB	           
+32	      0057	   SWAPIT	   LDX	    110010	      JIND	         	       072020	           
+33	      005A	         	   LDB	    110010	       STR	         	       6B2020	           
+34	      005D	         	  LDCH	    110010	       CH1	         	       532025	           
+35	      0060	         	  STCH	    111010	     STR,X	         	       57A01A	           
+36	      0063	         	   LDB	    110010	       STR	         	       6B2017	           
+37	      0066	         	  SUBR	          	       T,X	         	         9451	           
+38	      0068	         	  LDCH	    110010	       CH2	         	       532019	           
+39	      006B	         	  STCH	    111010	     STR,X	         	       57A00F	           
+40	      006E	         	   LDB	    110010	       STR	         	       6B200C	           
+41	      0071	         	     J	    110010	     LOOP2	         	       3F2F9E	           
+42	      0074	     EXIT	     J	    110000	         *	         	       3F0074	           
+43	      0077	     IIND	  WORD	          	         0	         	        -----	           
+44	      007A	     JIND	  WORD	          	         0	         	        -----	           
+45	      007D	      STR	  BYTE	          	  C'54321'	         	   3534333231	           
+46	      0082	      LEN	  WORD	          	         5	         	        -----	           
+47	      0085	      CH1	  BYTE	          	        C'	        '	             	           
+48	      0084	      CH2	  BYTE	          	        C'	        '	             	           
+49	      0083	         	   END	          	          	         	             	           

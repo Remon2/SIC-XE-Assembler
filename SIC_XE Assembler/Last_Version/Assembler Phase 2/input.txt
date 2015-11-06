@@ -1,0 +1,50 @@
+.234567890123456789012345
+BUBBLE   START   0
+         LDT     #1
+LOOP1    LDA     IIND
+         COMP    LEN
+         JEQ     EXIT
+         LDA     #0
+         STA     JIND
+LOOP2    LDX     JIND
+         LDA     LEN
+         SUB     #1
+         SUB     IIND
+         COMPR   X,A
+         JLT     CON
+         LDA     IIND
+         ADD     #1
+         STA     IIND
+         J       LOOP1
+CON      LDCH    STR,X
+         STCH    CH1
+         LDA     JIND
+         ADD     #1
+         STA     JIND
+         LDX     JIND
+         LDCH    STR,X
+         STCH    CH2
+         LDCH    CH1
+         RMO     A,S
+         LDCH    CH2
+         COMPR   S,A
+         JGT     SWAPIT
+         J       LOOP2
+SWAPIT   LDX     JIND
+         LDB     STR
+         LDCH    CH1
+         STCH    STR,X
+         LDB     STR
+         SUBR    T,X
+         LDCH    CH2
+         STCH    STR,X
+         LDB     STR
+         J       LOOP2
+EXIT     J       *
+IIND     WORD    0
+JIND     WORD    0
+STR      BYTE    C'54321'
+LEN      WORD    5
+CH1      BYTE    C' '
+CH2      BYTE    C' '
+         END

@@ -1,0 +1,462 @@
+# depslib dependency file v1.0
+1401378984 source:c:\users\ramy soliman\desktop\code blocks\assembler phase 2\conversions.cpp
+	"Conversions.h"
+	"SICXEPass1.h"
+
+1401378984 1.h"
+
+1401309036 c:\users\ramy soliman\desktop\code blocks\assembler phase 2\conversions.h
+	<iostream>
+	<string>
+	<sstream>
+	<math.h>
+	<iomanip>
+	<bitset>
+	"stdlib.h"
+
+1401548977 
+
+1401378884 source:c:\users\ramy soliman\desktop\code blocks\assembler phase 2\main.cpp
+	<iostream>
+	"SICXEPass2.h"
+
+1401378884 2.h"
+
+1401446468 c:\users\ramy soliman\desktop\code blocks\assembler phase 2\sicxepass2.h
+	"Conversions.h"
+	"SICXEPass1.h"
+	"Tables.h"
+	<math.h>
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<stdlib.h>
+	<algorithm>
+
+1401446468 >
+
+1401476620 source:c:\users\ramy soliman\desktop\code blocks\assembler phase 2\sicxepass1.cpp
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+
+1401476524 c:\users\ramy soliman\desktop\code blocks\assembler phase 2\sicxepass1.h
+	<iostream>
+	<string>
+	<sstream>
+	<iterator>
+	<fstream>
+	<vector>
+	<algorithm>
+	"Tables.h"
+
+1401455386 c:\users\ramy soliman\desktop\code blocks\assembler phase 2\tables.h
+	<iostream>
+	<set>
+	<string>
+	<sstream>
+	<vector>
+	<map>
+	"stdlib.h"
+
+1401487014 source:c:\users\ramy soliman\desktop\code blocks\assembler phase 2\sicxepass2.cpp
+	"SICXEPass2.h"
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+	<fstream>
+	<iostream>
+	<string>
+	<math.h>
+	<vector>
+
+1401398994 source:c:\users\ramy soliman\desktop\code blocks\assembler phase 2\tables.cpp
+	"Tables.h"
+	"Conversions.h"
+
+1401548767 ns.h"
+
+1401378984 source:c:\users\m.elkholy\desktop\dododo\conversions.cpp
+	"Conversions.h"
+	"SICXEPass1.h"
+
+1401309036 c:\users\m.elkholy\desktop\dododo\conversions.h
+	<iostream>
+	<string>
+	<sstream>
+	<math.h>
+	<iomanip>
+	<bitset>
+	"stdlib.h"
+
+1401455130 c:\users\m.elkholy\desktop\dododo\sicxepass1.h
+	<iostream>
+	<string>
+	<sstream>
+	<iterator>
+	<fstream>
+	<vector>
+	<algorithm>
+	"Tables.h"
+
+1401455386 c:\users\m.elkholy\desktop\dododo\tables.h
+	<iostream>
+	<set>
+	<string>
+	<sstream>
+	<vector>
+	<map>
+	"stdlib.h"
+
+1401378883 source:c:\users\m.elkholy\desktop\dododo\main.cpp
+	<iostream>
+	"SICXEPass2.h"
+
+1401312214 c:\users\m.elkholy\desktop\dododo\sicxepass2.h
+	"Conversions.h"
+	"SICXEPass1.h"
+	"Tables.h"
+	<math.h>
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<stdlib.h>
+	<algorithm>
+
+1401391479 source:c:\users\m.elkholy\desktop\dododo\sicxepass2.cpp
+	"SICXEPass2.h"
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+	<fstream>
+	<iostream>
+	<string>
+	<math.h>
+	<vector>
+
+1401382444 source:c:\users\m.elkholy\desktop\dododo\tables.cpp
+	"Tables.h"
+	"Conversions.h"
+
+1401390946 source:c:\users\m.elkholy\desktop\dododo\sicxepass1.cpp
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+
+1401378984 source:/home/mohamed/Desktop/dododo/Conversions.cpp
+	"Conversions.h"
+	"SICXEPass1.h"
+
+1401309036 /home/mohamed/Desktop/dododo/Conversions.h
+	<iostream>
+	<string>
+	<sstream>
+	<math.h>
+	<iomanip>
+	<bitset>
+	"stdlib.h"
+
+1401455130 /home/mohamed/Desktop/dododo/SICXEPass1.h
+	<iostream>
+	<string>
+	<sstream>
+	<iterator>
+	<fstream>
+	<vector>
+	<algorithm>
+	"Tables.h"
+
+1401455386 /home/mohamed/Desktop/dododo/Tables.h
+	<iostream>
+	<set>
+	<string>
+	<sstream>
+	<vector>
+	<map>
+	"stdlib.h"
+
+1401391479 source:/home/mohamed/Desktop/dododo/SICXEPass2.cpp
+	"SICXEPass2.h"
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+	<fstream>
+	<iostream>
+	<string>
+	<math.h>
+	<vector>
+
+1401312214 /home/mohamed/Desktop/dododo/SICXEPass2.h
+	"Conversions.h"
+	"SICXEPass1.h"
+	"Tables.h"
+	<math.h>
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<stdlib.h>
+	<algorithm>
+
+1401382444 source:/home/mohamed/Desktop/dododo/Tables.cpp
+	"Tables.h"
+	"Conversions.h"
+
+1401378883 source:/home/mohamed/Desktop/dododo/main.cpp
+	<iostream>
+	"SICXEPass2.h"
+
+1401482780 source:/home/mohamed/Desktop/dododo/SICXEPass1.cpp
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+
+1401378984 source:c:\users\m.elkholy\desktop\raamhy\assembler phase 2\conversions.cpp
+	"Conversions.h"
+	"SICXEPass1.h"
+
+1401309036 c:\users\m.elkholy\desktop\raamhy\assembler phase 2\conversions.h
+	<iostream>
+	<string>
+	<sstream>
+	<math.h>
+	<iomanip>
+	<bitset>
+	"stdlib.h"
+
+1401437153 c:\users\m.elkholy\desktop\raamhy\assembler phase 2\sicxepass1.h
+	<iostream>
+	<string>
+	<sstream>
+	<iterator>
+	<fstream>
+	<vector>
+	<algorithm>
+	"Tables.h"
+
+1401455386 c:\users\m.elkholy\desktop\raamhy\assembler phase 2\tables.h
+	<iostream>
+	<set>
+	<string>
+	<sstream>
+	<vector>
+	<map>
+	"stdlib.h"
+
+1401378884 source:c:\users\m.elkholy\desktop\raamhy\assembler phase 2\main.cpp
+	<iostream>
+	"SICXEPass2.h"
+
+1401391080 c:\users\m.elkholy\desktop\raamhy\assembler phase 2\sicxepass2.h
+	"Conversions.h"
+	"SICXEPass1.h"
+	"Tables.h"
+	<math.h>
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<stdlib.h>
+	<algorithm>
+
+1401437153 source:c:\users\m.elkholy\desktop\raamhy\assembler phase 2\sicxepass1.cpp
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+
+1401437448 source:c:\users\m.elkholy\desktop\raamhy\assembler phase 2\sicxepass2.cpp
+	"SICXEPass2.h"
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+	<fstream>
+	<iostream>
+	<string>
+	<math.h>
+	<vector>
+
+1401398994 source:c:\users\m.elkholy\desktop\raamhy\assembler phase 2\tables.cpp
+	"Tables.h"
+	"Conversions.h"
+
+1401378984 source:/home/mohamed/Desktop/Assembler Phase 2/Conversions.cpp
+	"Conversions.h"
+	"SICXEPass1.h"
+	"Conversions.h"
+	"SICXEPass1.h"
+
+1401309036 /home/mohamed/Desktop/Assembler Phase 2/Conversions.h
+	<iostream>
+	<string>
+	<sstream>
+	<math.h>
+	<iomanip>
+	<bitset>
+	"stdlib.h"
+	<iostream>
+	<string>
+	<sstream>
+	<math.h>
+	<iomanip>
+	<bitset>
+	"stdlib.h"
+
+1401476524 /home/mohamed/Desktop/Assembler Phase 2/SICXEPass1.h
+	<iostream>
+	<string>
+	<sstream>
+	<iterator>
+	<fstream>
+	<vector>
+	<algorithm>
+	"Tables.h"
+	<iostream>
+	<string>
+	<sstream>
+	<iterator>
+	<fstream>
+	<vector>
+	<algorithm>
+	"Tables.h"
+
+1401455386 /home/mohamed/Desktop/Assembler Phase 2/Tables.h
+	<iostream>
+	<set>
+	<string>
+	<sstream>
+	<vector>
+	<map>
+	"stdlib.h"
+	<iostream>
+	<set>
+	<string>
+	<sstream>
+	<vector>
+	<map>
+	"stdlib.h"
+
+1401476620 source:/home/mohamed/Desktop/Assembler Phase 2/SICXEPass1.cpp
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+
+1401548767 source:/home/mohamed/Desktop/Assembler Phase 2/Tables.cpp
+	"Tables.h"
+	"Conversions.h"
+
+1401378884 source:/home/mohamed/Desktop/Assembler Phase 2/main.cpp
+	<iostream>
+	"SICXEPass2.h"
+	<iostream>
+	"SICXEPass2.h"
+
+1401446468 /home/mohamed/Desktop/Assembler Phase 2/SICXEPass2.h
+	"Conversions.h"
+	"SICXEPass1.h"
+	"Tables.h"
+	<math.h>
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<stdlib.h>
+	<algorithm>
+	"Conversions.h"
+	"SICXEPass1.h"
+	"Tables.h"
+	<math.h>
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<stdlib.h>
+	<algorithm>
+
+1401487014 source:/home/mohamed/Desktop/Assembler Phase 2/SICXEPass2.cpp
+	"SICXEPass2.h"
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+	<fstream>
+	<iostream>
+	<string>
+	<math.h>
+	<vector>
+	"SICXEPass2.h"
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+	<fstream>
+	<iostream>
+	<string>
+	<math.h>
+	<vector>
+
+1401378984 source:c:\users\remon\desktop\assembler phase 2\conversions.cpp
+	"Conversions.h"
+	"SICXEPass1.h"
+
+1401309036 c:\users\remon\desktop\assembler phase 2\conversions.h
+	<iostream>
+	<string>
+	<sstream>
+	<math.h>
+	<iomanip>
+	<bitset>
+	"stdlib.h"
+
+1401476524 c:\users\remon\desktop\assembler phase 2\sicxepass1.h
+	<iostream>
+	<string>
+	<sstream>
+	<iterator>
+	<fstream>
+	<vector>
+	<algorithm>
+	"Tables.h"
+
+1401455386 c:\users\remon\desktop\assembler phase 2\tables.h
+	<iostream>
+	<set>
+	<string>
+	<sstream>
+	<vector>
+	<map>
+	"stdlib.h"
+
+1401539533 source:c:\users\remon\desktop\assembler phase 2\sicxepass2.cpp
+	"SICXEPass2.h"
+	"SICXEPass1.h"
+	"Conversions.h"
+	"Tables.h"
+	<fstream>
+	<iostream>
+	<string>
+	<math.h>
+	<vector>
+
+1401539224 c:\users\remon\desktop\assembler phase 2\sicxepass2.h
+	"Conversions.h"
+	"SICXEPass1.h"
+	"Tables.h"
+	<math.h>
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+	<stdlib.h>
+	<algorithm>
+
+1401539247 source:c:\users\remon\desktop\assembler phase 2\main.cpp
+	<iostream>
+	"SICXEPass2.h"
+
+1401539469 source:c:\users\remon\desktop\assembler phase 2\tables.cpp
+	"Tables.h"
+	"Conversions.h"
+
